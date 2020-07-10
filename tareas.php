@@ -19,13 +19,17 @@
     <div class="row">
         <!--Este es el lado izquierdo-->
         <div class="col-sm-6 text-center">
-            <h1>Tareas faltantes</h1>
+            <div class="card">
+                <h1>Tareas faltantes</h1>
+            </div>
             <!--Estas son las cartas que se van a mostrar por tarea faltante-->
             <?php include('tareasFaltantes.php') ?>
         </div>
         <!--Este es el lado derecho-->
         <div class="col-sm-6 text-center">
-            <h1>Tareas reaizadas</h1>
+            <div class="card">
+                <h1>Tareas reaizadas</h1>
+            </div>
             <!--Estas son mas tarjetas que se van a mostrar por tarea entregada-->
             <?php include('tareasRealizadas.php') ?>
         </div>

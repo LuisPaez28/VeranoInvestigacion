@@ -16,7 +16,7 @@
 <body>
 <?php $i = 0; while($i < 5){ ?>
     <!--Esta es una de las tarjetas que se vna a ostrar, el numero de ellas, obviamente esto se va a tratar con php-->
-    <div class="card my-1">
+    <div class="card my-2 text-left mx-2">
         <div class="card-header">
             <?php echo "Materia" ?>
         </div>
