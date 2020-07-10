@@ -71,7 +71,6 @@
             </tr>
         </tbody>
     </table>
-
     <?php include('footer.html') ?>
     <!-- Scripts para el MDB -->
     <script type="text/javascript" src="js/jquery.min.js"></script>

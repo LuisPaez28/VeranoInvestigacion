@@ -28,7 +28,7 @@
         <!--Este es el lado derecho-->
         <div class="col-sm-6 text-center">
             <div class="card">
-                <h1>Tareas reaizadas</h1>
+                <h1>Tareas realizadas</h1>
             </div>
             <!--Estas son mas tarjetas que se van a mostrar por tarea entregada-->
             <?php include('tareasRealizadas.php') ?>

@@ -17,7 +17,7 @@
     <?php include('navAlumnos.html') ?>
     <!--El cuerpo va a cambiar dependiendo de lo realizado y lo faltante del alumno logeado-->
 <!--Esta es una de las tarjetas que van a crear los profesores-->
-    <div class="card">
+    <div class="card my-3">
         <!--Aqu[i se va a mostrar el encabezado-->
         <h5 class="card-header"><?php echo "Examen"?></h5>
         <div class="card-body">
@@ -30,7 +30,7 @@
         </div>
     </div>
 <!--Esta es una de las tarjetas que van a crear los profesores-->
-<div class="card">
+<div class="card my-3">
         <!--Aqu[i se va a mostrar el encabezado-->
         <h5 class="card-header"><?php echo "Exposicion"?></h5>
         <div class="card-body">
