@@ -16,9 +16,9 @@
 <body>
     <!--Barra de navegacion-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a href="index.html" class="navbar-brand">
+        <a href="alumnoInicio.php" class="navbar-brand">
             <img src="Icon/icono.svg" style="width: 20%;" alt="EnlaceUPSin">
-            EnlaceUPSIN
+            EnlaceUPSin
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,20 +27,24 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a href="" class="nav-link">Acerca de nosotros</a>
                 </li>
-                <li class="nav-item dropdown active">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Acceder
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="docenteLogin.html">Docente</a>
-                        <a class="dropdown-item" href="alumnoLogin.html">Alumno</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Administrador</a>
-                    </div>
+                <li class="nav-item">
+                    <a href="alumnoInicio.php" class="nav-link">Clases</a>
+                </li>
+                <li class="nav-item">
+                    <a href="horarioAlumno.php" class="nav-link">Horario</a>
+                </li>
+                <li class="nav-item">
+                    <a href="avisoAlumno.php" class="nav-link">Avisos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="tareas.php" class="nav-link">Tareas</a>
+                </li>
+                <li class="nav-item">
+                    <!--Por lo pronto solo va a fingir que funciona-->
+                    <a class="nav-link" href="index.html" onclick="<?php session_destroy() ?>">Salir</a>
                 </li>
             </ul>
         </div>

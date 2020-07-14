@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,11 +18,11 @@
     <!--Aqupi va a cambiar la barra de navegaci[on para mostrar un apartado de las tareas de acuerdo a su grupo
     horario, inicio y para cerrar la sesi[on-->
     <!--NAV-->
-    <?php include('navAlumnos.php') ?>
+    <?php include('navDocente.php') ?>
     <!--Contenido en el que se van a mstrar las clases respecto a el grupo.
     Este contenido se repite dependiendo del numero de materias que tenga en ese grupo.
     Estas tarjetas tambien se van a llenar con php y la base de datos-->
-    <?php include('cardAlumno.php') ?>
+    <?php include('cardDocente.php') ?>
 
     <!--El footer-->
     <?php include('footer.html')?>

@@ -1,3 +1,4 @@
+<?php ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,20 +32,20 @@
                     <a href="" class="nav-link">Acerca de nosotros</a>
                 </li>
                 <li class="nav-item">
-                    <a href="alumnoInicio.php" class="nav-link">Clases</a>
+                    <a href="docenteInicio.php" class="nav-link">Clases</a>
                 </li>
                 <li class="nav-item">
-                    <a href="horarioAlumno.php" class="nav-link">Horario</a>
+                    <a href="horarioDocente.php" class="nav-link">Horario</a>
                 </li>
                 <li class="nav-item">
-                    <a href="avisoAlumno.php" class="nav-link">Avisos</a>
+                    <a href="avisoDocente.php" class="nav-link">Avisos</a>
                 </li>
                 <li class="nav-item">
-                    <a href="tareas.php" class="nav-link">Tareas</a>
+                    <a href="tareasDocente.php" class="nav-link">Tareas</a>
                 </li>
                 <li class="nav-item">
-                    <!--Por lo pronto solo va a fingir que funciona-->
-                    <a class="nav-link" href="index.html">Salir</a>
+                    <!--Por lo pronto solo va a fingir que funciona con la session-->
+                    <a class="nav-link" href="index.html" onclick="<?php session_destroy() ?>">Salir</a>
                 </li>
             </ul>
         </div>

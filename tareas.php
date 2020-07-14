@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <?php include('navAlumnos.html') ?>
+    <?php include('navAlumnos.php') ?>
     <!--El cuerpo va a cambiar dependiendo de lo realizado y lo faltante del alumno logeado-->
     <div class="row">
         <!--Este es el lado izquierdo-->
