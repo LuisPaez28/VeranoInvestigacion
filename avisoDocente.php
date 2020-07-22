@@ -16,21 +16,63 @@
 <body>
     <?php include('navDocente.php') ?>
 
-    <h2 class="text-center">Crear Aviso</h2>
-    <!--Formulario para crear un aviso-->
-    <div class="card  my-2">
-        <form name="crearAviso" action="creaAviso.php" method="POST">
-            <div class="form-group mx-2">
-                <label for="Titutlos">Titulo: </label>
-                <textarea class="form-control" rows="1" name="titulo" id="titulo"></textarea>
-            </div>
-            <div class="form-group mx-2">
-                <label for="avisos">Aviso: </label>
-                <textarea class="form-control" rows="3" name="aviso" id="aviso"></textarea>
-            </div>
-            <input class="btn btn-blue-grey float-md-right" type="submit" value="Publicar">
-        </form>
+    <div class="card text-center mx-2 my-2">
+        <div class="card-body">
+            <h2 class="card-title">Mandar nuevo aviso</h2>
+            <p class="card-text">Presiona el botón para mandar una nuevo aviso</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#basicExampleModal">
+                Crear
+            </button>
+        </div>
     </div>
+
+    <!-- Modal de nueva tarea -->
+    <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                        <!--Nueva tarea-->
+                        <h2 class="text-center">Crear Aviso</h2>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card  my-2">
+                        <form name="crearAviso" action="creaAviso.php" method="POST">
+                            <div class="row">
+                                <div class="col form-group mx-2 mt-4">
+                                    <label for="Titutlos">Titulo: </label>
+                                    <textarea class="form-control" rows="1" name="titulo" id="titulo"></textarea>
+                                </div>
+
+                                <div class="col form-group mx-2 mt-4">
+                                    <label for="exampleFormControlSelect1">Grupo</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group mx-2">
+                                <label for="avisos">Aviso: </label>
+                                <textarea class="form-control" rows="3" name="aviso" id="aviso"></textarea>
+                            </div>
+                            <input class="btn btn-blue-grey float-md-right" type="submit" value="Publicar">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <h2 class="text-center">Avisos</h2>
     <!--Esta es una de las tarjetas que van a crear los profesores-->
     <div class="card my-3">
